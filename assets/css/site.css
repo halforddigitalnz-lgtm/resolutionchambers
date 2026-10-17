@@ -424,12 +424,22 @@ h1, h2, h3 {
 
 .hero-title .line > span { display: block; }
 
+/* The chambers' motto sits under the name, smaller and quieter */
+.hero-byline {
+  max-width: 30em;
+  margin-top: 24px;
+  color: var(--stone);
+  font: italic 400 var(--lede)/1.45 var(--serif);
+}
+
 .hero-sub {
   max-width: 40ch;
   margin-top: 28px;
   font-size: clamp(1.0625rem, 1rem + 0.3vw, 1.25rem);
   line-height: 1.6;
 }
+
+.hero-byline + .hero-sub { margin-top: 16px; }
 
 .hero-actions { margin-top: 32px; }
 
